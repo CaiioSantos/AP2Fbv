@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.downloadmanager.Contatos;
+import com.example.downloadmanager.Model.Contatos;
 import com.example.downloadmanager.R;
 
 import java.util.ArrayList;

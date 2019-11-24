@@ -1,4 +1,4 @@
-package com.example.downloadmanager;
+package com.example.downloadmanager.Model;
 
 public class Contatos {
     private String nome;
@@ -33,5 +33,14 @@ public class Contatos {
 
     public void setFoto(int foto) {
         this.foto = foto;
+    }
+
+    @Override
+    public String toString() {
+        return "Contatos{" +
+                "nome='" + nome + '\'' +
+                ", email='" + email + '\'' +
+                ", foto=" + foto +
+                '}';
     }
 }
