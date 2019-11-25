@@ -45,6 +45,6 @@ public class Fachada implements IContatoControle {
 
     @Override
     public ArrayList listarContatos() {
-        return null;
+        return this.contatoControle.listarContatos();
     }
 }

@@ -59,7 +59,7 @@ public class ContatosAdapter extends BaseAdapter {
             holder = (ViewHolder) view.getTag();
         }
 
-        holder.imagem.setImageResource(Integer.parseInt(list.get(i).getFoto().toString()));
+        holder.imagem.setImageResource(list.get(i).getFoto());
         holder.nome.setText(list.get(i).getNome());
         holder.email.setText(list.get(i).getEmail());
 

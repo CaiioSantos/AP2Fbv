@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ListView;
 
 import com.example.downloadmanager.Adapter.ContatosAdapter;
+import com.example.downloadmanager.Fachada.Fachada;
 import com.example.downloadmanager.Model.Contatos;
 import com.example.downloadmanager.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -16,7 +17,7 @@ import java.util.ArrayList;
 
 public class ListaDeContatos extends AppCompatActivity {
     private ListView listView;
-    private ArrayList<Contatos> list;
+    private ArrayList<Contatos> listaContato;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +25,7 @@ public class ListaDeContatos extends AppCompatActivity {
         setContentView(R.layout.activity_lista_de_contatos);
         setTitle("Contatos");
         listView = findViewById(R.id.activityMainListView);
-        list = new ArrayList<>();
+        //list = new ArrayList<>();
 
         FloatingActionButton floatingActionButton = findViewById(R.id.floatingActionButton);
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
@@ -36,15 +37,14 @@ public class ListaDeContatos extends AppCompatActivity {
             }
         });
 
-        for (int i=0; i<100; i++){
-            list.add(new Contatos("Tua Mãe", "tua.mae.e.minha@hotmail.com", R.drawable.image1));
-        }
+        Fachada fachada = new Fachada();
+        listaContato =fachada.listarContatos();
 
 
 
 
 
-        listView.setAdapter(new ContatosAdapter(this, list));
+        listView.setAdapter(new ContatosAdapter(this, listaContato));
 
 //        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 //            @Override

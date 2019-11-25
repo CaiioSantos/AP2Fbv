@@ -3,17 +3,14 @@ package com.example.downloadmanager.Model;
 public class Contatos {
     private String nome;
     private String email;
-    private String foto;
+    private int foto;
 
-    public Contatos(String nome, String email, String foto) {
+    public Contatos(String nome, String email, int foto) {
         this.nome = nome;
         this.email = email;
         this.foto = foto;
     }
 
-    public Contatos(String tua_mãe, String email, int image1) {
-
-    }
     public Contatos (){
 
     }
@@ -34,11 +31,11 @@ public class Contatos {
         this.email = email;
     }
 
-    public String getFoto() {
+    public int getFoto() {
         return foto;
     }
 
-    public void setFoto(String foto) {
+    public void setFoto(int foto) {
         this.foto = foto;
     }
 

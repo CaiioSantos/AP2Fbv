@@ -57,7 +57,7 @@ public class AdicionarContato extends AppCompatActivity {
 
                 contatos.setNome(edtNome.getText().toString());
                 contatos.setEmail(edtEmail.getText().toString());
-                contatos.setFoto((String) imageView.getTag());
+                contatos.setFoto((int) imageView.getTag());
 
 
                 try{
@@ -66,6 +66,7 @@ public class AdicionarContato extends AppCompatActivity {
 
                         Toast.makeText(getApplicationContext(), "Contato Adicionado",
                                 Toast.LENGTH_SHORT).show();
+
 
                     }
                 } catch (Exception e) {
