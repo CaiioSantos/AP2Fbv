@@ -63,14 +63,14 @@
 
     <ImageView
         android:id="@+id/image_contato"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="127dp"
+        android:layout_height="163dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="142dp"
-        android:layout_marginTop="74dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="60dp"
+        tools:srcCompat="@drawable/ic_contato" />
 
     <TextView
         android:id="@+id/textView3"
