@@ -85,9 +85,9 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/editText3"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="115dp"
+        android:layout_marginTop="51dp"
         android:text="SALVAR" />
 
 </RelativeLayout>
