@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AdicionarContato">
+    tools:context=".UI.AdicionarContato">
 
     <TextView
         android:id="@+id/textView2"
@@ -17,7 +17,7 @@
         android:text="Email" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/edt_email"
         android:layout_width="328dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -25,6 +25,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="444dp"
         android:ems="10"
+        android:hint="Ex: ana@gmail.com"
         android:inputType="textPersonName" />
 
     <TextView
@@ -38,7 +39,7 @@
         android:text="Nome" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edt_name"
         android:layout_width="329dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -46,6 +47,7 @@
         android:layout_marginStart="49dp"
         android:layout_marginTop="331dp"
         android:ems="10"
+        android:hint="Ex:Ana"
         android:inputType="textPersonName" />
 
     <ImageButton
@@ -60,7 +62,7 @@
         app:srcCompat="@android:drawable/ic_menu_camera" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/image_contato"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -82,10 +84,10 @@
         android:text="Adicionar Foto" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_salvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText3"
+        android:layout_below="@+id/edt_email"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="51dp"
         android:text="SALVAR" />

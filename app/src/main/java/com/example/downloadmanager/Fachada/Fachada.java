@@ -18,7 +18,7 @@ public class Fachada implements IContatoControle {
         return instancia;
     }
 
-    private Fachada(){
+    public Fachada(){
         contatoControle = ContatoControle.getInstance();
     }
 

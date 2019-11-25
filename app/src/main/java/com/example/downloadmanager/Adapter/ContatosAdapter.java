@@ -50,16 +50,16 @@ public class ContatosAdapter extends BaseAdapter {
             holder = new ViewHolder();
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             view = inflater.inflate(R.layout.contatos_list_view, null);
-            holder.imagem = (ImageView) view.findViewById(R.id.imgViewFoto);
-            holder.nome = (TextView) view.findViewById(R.id.txtViewNome);
-            holder.email = (TextView) view.findViewById(R.id.txtViewEmail);
+            holder.imagem = view.findViewById(R.id.imgViewFoto);
+            holder.nome =  view.findViewById(R.id.txtViewNome);
+            holder.email = view.findViewById(R.id.txtViewEmail);
             view.setTag(holder);
 
         } else {
             holder = (ViewHolder) view.getTag();
         }
 
-        holder.imagem.setImageResource(list.get(i).getFoto());
+        holder.imagem.setImageResource(Integer.parseInt(list.get(i).getFoto().toString()));
         holder.nome.setText(list.get(i).getNome());
         holder.email.setText(list.get(i).getEmail());
 
