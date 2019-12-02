@@ -18,19 +18,22 @@ public final class DownloadFactory {
     }
 
 
-    public DownloadImage makeurl(String url, String tipo){
+    public ManagerDownloads makeurl(String url, String tipo){
 
-        String  ext = "";
-        int i  = url.lastIndexOf("");
-        if (i>0){
-            ext = url.substring(i+1);
+        String extension = "";
+        int i = url.lastIndexOf(".");
+        if(i>0){
+            //Getting the url extension
+            extension = url.substring(i+1);
 
-            if(ext.equals("png")|| ext.equals("jpg") && tipo.equals("image")){
-                return new DownloadImage();
+            if(extension.equals("jpg") || extension.equals("png") && type.equals("image") ){
+                return new ImageDownload();
             }
-            if (tipo.equals("audio")){
-                return new DownloadAudio();
+
+            if(type.equals("audio")){
+                return new AudioDownload();
             }
+
         }
 
         return null;
