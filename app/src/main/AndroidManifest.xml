@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UI.ListaDeContatos"></activity>
+        <activity android:name=".Model.InsertURLmusic"></activity>
+        <activity android:name=".Model.SelectLib" />
+        <activity android:name=".UI.ListaDeContatos" />
         <activity android:name=".UI.AdicionarContato" />
         <activity android:name=".UI.MainActivity">
             <intent-filter>

@@ -18,7 +18,7 @@ public final class DownloadFactory {
     }
 
 
-    public ManagerDownloads makeurl(String url, String tipo){
+    public ManagerDownloads makeurlobject(String url, String tipo){
 
         String extension = "";
         int i = url.lastIndexOf(".");
@@ -26,12 +26,12 @@ public final class DownloadFactory {
             //Getting the url extension
             extension = url.substring(i+1);
 
-            if(extension.equals("jpg") || extension.equals("png") && type.equals("image") ){
-                return new ImageDownload();
+            if(extension.equals("jpg") || extension.equals("png") && tipo.equals("image") ){
+                return new DownloadImage();
             }
 
-            if(type.equals("audio")){
-                return new AudioDownload();
+            if(tipo.equals("audio")){
+                return new DownloadAudio();
             }
 
         }

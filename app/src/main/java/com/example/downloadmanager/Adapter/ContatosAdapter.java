@@ -51,8 +51,8 @@ public class ContatosAdapter extends BaseAdapter {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             view = inflater.inflate(R.layout.contatos_list_view, null);
             holder.imagem = view.findViewById(R.id.imgViewFoto);
-            holder.nome =  view.findViewById(R.id.txtViewNome);
-            holder.email = view.findViewById(R.id.txtViewEmail);
+            holder.nome =  view.findViewById(R.id.txtViewNomeMusica);
+            holder.email = view.findViewById(R.id.txtViewUrl);
             view.setTag(holder);
 
         } else {

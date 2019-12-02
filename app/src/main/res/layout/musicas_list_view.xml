@@ -14,7 +14,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="3dp"
         android:layout_marginTop="32dp"
-        tools:srcCompat="@tools:sample/avatars[4]" />
+        tools:srcCompat="@tools:sample/avatars[2]" />
 
     <TextView
         android:id="@+id/txtViewNomeMusica"
@@ -24,7 +24,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="85dp"
         android:layout_marginTop="42dp"
-        android:text="Nome"
+        android:text="Musica"
         android:textSize="24sp" />
 
     <TextView
@@ -35,7 +35,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="86dp"
         android:layout_marginTop="78dp"
-        android:text="Email"
+        android:text="Url"
         android:textColor="#96153F"
         android:textSize="18sp" />
 
