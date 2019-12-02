@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
 
@@ -37,6 +39,9 @@ public class ListaDeContatos extends AppCompatActivity {
             }
         });
 
+        for (int i=0; i<100; i++){
+            listaContato.add(new Contatos("Contato", "Contato@hotmail.com", R.drawable.image1));
+        }
         Fachada fachada = new Fachada();
         listaContato =fachada.listarContatos();
 
@@ -55,6 +60,24 @@ public class ListaDeContatos extends AppCompatActivity {
 //
 //        });
 
+
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu (Menu menu){
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected (MenuItem item){
+        int id = item.getItemId();
+        if (id == R.id.download) {
+            Intent ListaMusica = new Intent(getApplicationContext(), AdicionarContato.class);
+            startActivity(ListaMusica);
+        }
+        return super.onOptionsItemSelected(item);
 
     }
 }

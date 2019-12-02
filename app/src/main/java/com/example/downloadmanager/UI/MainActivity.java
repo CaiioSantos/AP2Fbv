@@ -64,8 +64,8 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected (MenuItem item){
         int id = item.getItemId();
         if (id == R.id.download) {
-            Toast.makeText(this, "Downloading", Toast.LENGTH_SHORT).show();
-            return true;
+            Intent ListaMusica = new Intent(getApplicationContext(), AdicionarContato.class);
+            startActivity(ListaMusica);
         }
         return super.onOptionsItemSelected(item);
 
