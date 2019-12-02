@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.downloadmanager.Adapter.ContatosAdapter;
 import com.example.downloadmanager.Fachada.Fachada;
@@ -27,7 +28,7 @@ public class ListaDeContatos extends AppCompatActivity {
         setContentView(R.layout.activity_lista_de_contatos);
         setTitle("Contatos");
         listView = findViewById(R.id.activityMainListView);
-        //list = new ArrayList<>();
+        listaContato = new ArrayList<>();
 
         FloatingActionButton floatingActionButton = findViewById(R.id.floatingActionButton);
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
@@ -39,9 +40,10 @@ public class ListaDeContatos extends AppCompatActivity {
             }
         });
 
-        for (int i=0; i<100; i++){
+        /*for (int i=0; i<100; i++){
             listaContato.add(new Contatos("Contato", "Contato@hotmail.com", R.drawable.image1));
-        }
+        }*/
+
         Fachada fachada = new Fachada();
         listaContato =fachada.listarContatos();
 
@@ -49,7 +51,9 @@ public class ListaDeContatos extends AppCompatActivity {
 
 
 
-        listView.setAdapter(new ContatosAdapter(this, listaContato));
+
+
+                listView.setAdapter(new ContatosAdapter(this, listaContato));
 
 //        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 //            @Override

@@ -3,12 +3,10 @@ package com.example.downloadmanager.Model;
 public class Contatos {
     private String nome;
     private String email;
-    private int foto;
 
-    public Contatos(String nome, String email, int foto) {
+    public Contatos(String nome, String email) {
         this.nome = nome;
         this.email = email;
-        this.foto = foto;
     }
 
     public Contatos (){
@@ -31,20 +29,13 @@ public class Contatos {
         this.email = email;
     }
 
-    public int getFoto() {
-        return foto;
-    }
 
-    public void setFoto(int foto) {
-        this.foto = foto;
-    }
 
     @Override
     public String toString() {
         return "Contatos{" +
                 "nome='" + nome + '\'' +
                 ", email='" + email + '\'' +
-                ", foto=" + foto +
                 '}';
     }
 }

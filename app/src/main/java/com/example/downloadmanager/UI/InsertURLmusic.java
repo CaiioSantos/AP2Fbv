@@ -1,4 +1,4 @@
-package com.example.downloadmanager.Model;
+package com.example.downloadmanager.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 

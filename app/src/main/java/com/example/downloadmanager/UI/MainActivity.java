@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setTitle("Contatos");
+       /* setTitle("Contatos");
         listView = findViewById(R.id.activityMainListView);
         list = new ArrayList<>();
 
@@ -69,5 +69,14 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
 
+    }*/
+
+
+
+}
+
+    public void TelaContato(View view) {
+        Intent intent = new Intent(getApplicationContext(), ListaDeContatos.class);
+        startActivity(intent);
     }
 }

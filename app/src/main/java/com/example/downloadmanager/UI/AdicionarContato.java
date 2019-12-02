@@ -57,7 +57,6 @@ public class AdicionarContato extends AppCompatActivity {
 
                 contatos.setNome(edtNome.getText().toString());
                 contatos.setEmail(edtEmail.getText().toString());
-                contatos.setFoto((int) imageView.getTag());
 
 
                 try{
